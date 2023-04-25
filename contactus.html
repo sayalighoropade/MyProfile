@@ -2,6 +2,52 @@
 <html>
   <head>
     <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kanit&family=Oswald&family=Roboto+Slab&display=swap"
+      rel="stylesheet"/>
+    <style>
+      *{
+        
+        text-transform: capitalize;
+        font-family: 'Roboto Slab', serif;
+
+      }
+      h3{
+        font-size: xx-large;
+        text-decoration: underline;
+      }
+      label{
+        font-size: large;
+        color: slateblue;
+      }
+      input{
+        width: 400px;
+        height: 25px;
+        border-radius: 10px;
+        border: 1px solid slateblue;
+       
+        color: cadetblue;
+        background-color: rgb(231, 241, 241);
+
+        
+      }
+      input[type="text"]{
+        color: red;
+        text-transform: capitalize;
+      }
+      input[type="email"]{
+           text-transform: lowercase;
+      }
+      #submit:hover{
+        background-color: rgb(238, 135, 98);
+      }
+      button[type="reset"]:hover{
+         background-color: rgb(238, 135, 98);
+      }
+     
+    </style>
   </head>
   <body>
     <h3><strong>Contact Us</strong></h3>
@@ -26,14 +72,14 @@
             <td>
               <label><strong>Mobile Number:</strong></label>
             </td>
-            <td><input type="number" /></td>
+            <td><input type="number" maxlength="10" /></td>
           </tr>
 
           <tr>
             <td>
               <label><strong>Email:</strong></label>
             </td>
-            <td><input type="text" placeholder="Ex.abc@gmail.com" /></td>
+            <td><input type="email" placeholder="Ex.abc@gmail.com" /></td>
           </tr>
 
           <tr>
@@ -44,8 +90,8 @@
           </tr>
 
           <tr>
-            <td><button type="submit">Submit</button></td>
-            <td><button type="reset">clear</button></td>
+            <td><button type="submit" id="submit">Submit</button></td>
+            <td><button type="reset" >clear</button></td>
           </tr>
         </tbody>
       </table>

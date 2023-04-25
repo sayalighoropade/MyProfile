@@ -2,18 +2,29 @@
 <html>
   <head>
     <title>Personal Data</title>
+
+    <style>
+      #userName {
+        margin-left: 30px;
+      }
+      .userInfo {
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
     <h3><strong>Profile Photo:</strong></h3>
+    <br />
     <img src="id.PNG" height="120px" width="120px" /><br />
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <span>Niya sharma</span><br /><br />
-    <span><strong>Mobile Number:</strong> 9900 8850 66</span><br />
-    <span><strong>Email:</strong>niyasharma@gmail.com</span><br />
-    <span><strong>Date of Birth:</strong>Aug-17-2005</span><br />
-    <span><strong>Address:</strong>Anand Nagar,Pune</span><br /><br />
+
+    <span id="userName">Niya sharma</span><br />
+    <p><strong>Mobile Number:</strong> 9900 8850 66</p>
+    <p><strong>Email:</strong>niyasharma@gmail.com</p>
+    <p><strong>Date of Birth:</strong>Aug-17-2005</p>
+    <p><strong>Address:</strong>Anand Nagar,Pune</p>
     <details>
-      <summary><strong>Family Detail</strong></summary>
+      <summary><strong>Family Details</strong></summary>
       <ul>
         <li>Father name : Tarak Sharma</li>
         <li>Mother name : Manika Sharma</li>
@@ -23,7 +34,7 @@
 
     <!-- Hobbies -->
     <details>
-      <summary>Hobbies</summary>
+      <summary class="userInfo">Hobbies</summary>
       <ul>
         <li>Travelling</li>
         <li>Reading</li>
@@ -35,7 +46,7 @@
 
     <!--Achievements-->
     <details>
-      <summary>Achievements</summary>
+      <summary class="userInfo">Achievements</summary>
       <ul>
         <li>Orgnized an event to raise money for charity</li>
         <li>Achieved high grades in studies</li>

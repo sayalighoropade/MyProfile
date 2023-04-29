@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Details</title>
+
+        <style>
+            input{
+                border: 1px solid rgb(250, 245, 245);
+                
+                padding: 8px;
+                width: 30%;
+            
+                
+            }
+            h2{
+                padding-left: 10px;
+                padding-bottom: 10px;
+            }
+            #name{
+                
+                padding-right: 120px;
+                font-size: large;
+                padding-left: 25px;
+            
+
+            }
+            fieldset{
+                border: 1px solid white;
+                margin-top: 3px;
+                margin-bottom: 3px;
+                height: 30px;
+                font-size: large;
+                width: 70%;
+                border-radius: 10px;
+                background-color: rgb(221, 179, 145);
+
+                
+               
+                
+                
+            }
+            #field{
+                height: 1000px;
+                background-color: rgb(236, 124, 32);
+               
+            }
+            #number{
+                margin-top: 3px;
+                margin-bottom: 3px;
+                height: 160px;
+                font-size: large;
+                background-color: rgb(221, 179, 145);
+
+            }
+            #country{
+                padding-right: 100px;
+                font-size: large;
+                padding-left: 25px;
+            }
+            #card{
+                padding-right: 90px;
+                font-size: large;
+                padding-left: 25px;
+            }
+            #cardd{
+                padding-right: 75px;
+                font-size: large;
+                padding-left: 25px;
+            
+
+            }
+            #carddd{
+                padding-right: 72px;
+                font-size: large;
+                padding-left: 25px;
+            
+            }
+            .name{
+               width: 10%;
+            
+            }
+
+            
+          
+           
+            
+            
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <fieldset id="field">
+            <h2>Step 1: Your Details</h2>
+            <fieldset>
+           <label for="name" id="name">Name</label>
+           <input type="text" placeholder="First and Last name"><br><br></fieldset>
+
+           <fieldset><label for="email" id="name">Email</label>
+           <input type="email" placeholder="Eg.abc@gmail.com"><br><br></fieldset>
+
+           <fieldset><label for="phone" id="name">Phone</label>
+           <input type="number"  placeholder="Eg.000000000000"></fieldset>
+           
+
+           <h2>Step 2: Delivery Address</h2>
+           
+           <fieldset id="number"><label for="address" id="country">Address</label>
+           <textarea cols="30" rows="10"></textarea><br><br></fieldset>
+
+           <fieldset><label for="post code" id="card">Post code</label>
+           <input type="number"><br><br></fieldset>
+
+           <fieldset><label for="country" id="country">Country</label>
+           <input type="text"><br><br></fieldset>
+
+           <h2>Step 3: Card Dtails</h2>
+
+           <fieldset><label id="name">Card type</label><br>
+           <input type="radio" name="card" class="name"><label class="name">VISA</label>
+
+          
+           <input type="radio" name="card"><label>AmEx</label>
+           <input type="radio" name="card"><label>Mastercard</label><br><br></fieldset>
+           
+           <fieldset><label id="cardd">Card number</label>
+           <input type="number"><br><br></fieldset>
+
+           <fieldset><label id="carddd">Security code</label>
+           <input type="number"><br><br></fieldset>
+
+           <fieldset><label id="carddd">Name on card</label>
+           <input type="text" placeholder="Exact name as on the card"></fieldset>
+        </fieldset>
+        </form>
+    </body>
+</html>
